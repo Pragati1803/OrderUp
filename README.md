@@ -259,4 +259,6 @@ CVV: any 3 digits | Expiry: any future date
 
 ---
 
-Built with ❤️ for PSIT Lucknow
+Built with ❤️ for PSIT 
+
+Developer ~ Pragati Srivastava
