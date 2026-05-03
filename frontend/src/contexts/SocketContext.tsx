@@ -16,7 +16,9 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   useEffect(() => {
     if (!token) return;
-    const s = io(window.location.origin.replace('5173', '5001'), { auth: { token } });
+    const s = io(import.meta.env.VITE_API_URL, {
+      auth: { token }
+    });
     s.on('connect', () => setConnected(true));
     s.on('disconnect', () => setConnected(false));
     setSocket(s);
